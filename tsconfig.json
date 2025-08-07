@@ -13,10 +13,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",               // ✅ required for paths
+
+    // ✅ Required for alias support
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]          // ✅ resolves @/ to src/
+      "@/*": ["./src/*"]
     },
+
     "plugins": [
       {
         "name": "next"
